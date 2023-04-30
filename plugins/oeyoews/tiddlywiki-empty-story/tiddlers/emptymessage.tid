@@ -1,0 +1,13 @@
+title: $:/config/EmptyStoryMessage
+
+<$list filter="[[$:/plugins/oeyoews/tiddlywiki-gravatar]has[plugin-type]]">
+  <center>
+  <$button class="bg-transparent">
+    <$action-sendmessage $message="tm-modal" $param="oeyoews"/>
+    <$avatar />
+  </$button>
+    <$hitokoto />
+  </center>
+</$list>
+
+{{{ [[GettingStarted]] ||$:/core/ui/ViewTemplate }}}

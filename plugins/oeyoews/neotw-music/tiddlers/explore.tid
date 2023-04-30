@@ -1,0 +1,3 @@
+title: $:/plugins/oeyoews/neotw-music/explore
+
+<$macrocall $name="tree" prefix={{{ [<currentTiddler>addsuffix[/]] }}}>

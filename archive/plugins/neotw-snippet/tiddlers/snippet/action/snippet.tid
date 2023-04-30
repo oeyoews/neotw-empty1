@@ -1,0 +1,13 @@
+caption: snippet
+key: ((snippet))
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/neotw-surfing-keys/snippet
+
+<$navigator story="$:/StoryList" history="$:/HistoryList">
+<$action-sendmessage
+	$message="tm-new-tiddler" title="neotw/snippet/"
+	tags="$:/tags/TextEditor/Snippet"
+	caption={{$:/language/Buttons/Stamp/New/Title}}
+	text={{$:/language/Buttons/Stamp/New/Text}}
+/>
+</$navigator>

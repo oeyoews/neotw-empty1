@@ -1,0 +1,38 @@
+{
+  "tiddlers": [
+    {
+      "file": "fancybox.options.js",
+      "fields": {
+        "title": "$:/plugins/oeyoews/tiddlywiki-fancybox/fancybox.options.js",
+        "module-type": "library",
+        "type": "application/javascript"
+      }
+    }
+  ],
+  "directories": [
+    {
+      "path": "./",
+      "filesRegExp": "^.*\\.min.css$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-fancybox/library/"
+        },
+        "type": "text/css",
+        "tags": "$:/tags/Stylesheet"
+      }
+    },
+    {
+      "path": "library",
+      "filesRegExp": "^.*\\.min.js$",
+      "fields": {
+        "title": {
+          "source": "filename",
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-fancybox/library/"
+        },
+        "type": "application/javascript",
+        "module-type": "library"
+      }
+    }
+  ]
+}

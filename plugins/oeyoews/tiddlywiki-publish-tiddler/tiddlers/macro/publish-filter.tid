@@ -1,0 +1,6 @@
+title: $:/plugins/oeyoews/tiddlywiki-publish-tiddler/macro/publish-filter
+tags: $:/tags/Macro
+
+\define publishFilter()
+-[!is[system]publish[no]]
+\end

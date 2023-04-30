@@ -1,0 +1,7 @@
+caption: set field
+tags: $:/tags/TextEditor/Snippet
+title: $:/language/Snippets/set field
+
+<$action-setfield $tiddler=""
+          $field="text"
+          $value="yes"/>

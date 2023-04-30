@@ -1,0 +1,5 @@
+key: ((fullscreen))
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/oeyoews/neotw-surfing-keys/fullscreen
+
+<$action-sendmessage $message="tm-full-screen"/>

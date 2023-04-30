@@ -1,0 +1,49 @@
+title: $:/core/ui/ViewTemplate/subtitle
+tags: $:/tags/ViewTemplate
+
+\define tid() $:/plugins/oeyoews/tiddlywiki-tiddler-info/config
+\define tidGravatar() $:/plugins/oeyoews/tiddlywiki-tiddler-info/gravatar.png
+
+<$reveal type="nomatch" stateTitle=<<folded-state>> text="hide" tag="div" retain="yes" animate="yes">
+<div class="tc-subtitle">
+<$list filter="[all[current]has[creator]]">
+    <$avatar width=16 link="https://github.com/oeyoews" />
+{{!!creator}}&nbsp;
+</$list>
+<$list filter="[all[current]has[created]]">
+<$text text={{{[<tid>get[ocreated]else[👉]]}}} /> created <$view field="created" format="date" template="YYYY/0MM/0DD"/>&nbsp;&nbsp;
+</$list>
+<$list filter="[all[current]has[modified]]">
+<$text text={{{[<tid>get[omodified]else[📝]]}}} /> modified <$view field="modified" format="relativedate" />&nbsp;&nbsp;
+</$list>
+<$list filter="[all[current]has[description]]">
+<$text text={{{[<tid>get[odescription]else[✅]]}}} />&nbsp;{{!!description}} &nbsp;&nbsp;
+</$list>
+
+<!-- another view -->
+<!-- on dev -->
+<!-- not work ??? -->
+<!-- <$list filter="[{$:/info/url/protocol}prefix[http:]]"> -->
+<$list filter="[<currentTiddler>!is[system]!days:created[-300]] -[days:modified[-300]]" >
+<!-- add style -->
+⚠️  {{!!title}} 条目
+<$list filter="[all[current]!is[system]has[created]]">
+创建于 <$view field="created" format="date" template="YYYY-0MM-0DD"/>
+</$list>
+<$list filter="[all[current]!is[system]has[modified]]">
+, 修改于 <$view field="modified" format="relativedate" />
+</$list>
+, 内容可能已经不够准确， 请酌情参考 &nbsp;
+</$list>
+<!-- </$list> -->
+
+<!-- local manage -->
+<!-- https have bug, will creat http: tid -->
+<!-- GettingStarted not work filter -->
+<$list filter="[all[current]!is[system]!is[binary]]">
+<!-- <<tid-size>> -->
+<<opublish>>
+</$list>
+
+</div>
+</$reveal>

@@ -1,0 +1,11 @@
+tiddlers/subwiki
+trashbin
+dist
+public
+.github/
+test
+**/.idea/
+PluginName*
+.npmrc
+.gitignore
+node_modules

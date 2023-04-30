@@ -1,0 +1,9 @@
+[Unit]
+Description=NeoTw Service
+
+[Service]
+WorkingDirectory=${workingdirectory}
+ExecStart=/usr/bin/tiddlywiki --build listen
+
+[Install]
+WantedBy=default.target

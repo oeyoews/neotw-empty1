@@ -1,0 +1,20 @@
+created: 20230227004259762
+creator: oeyoews
+modified: 20230227053747372
+modifier: oeyoews
+tags: $:/tags/Stylesheet
+title: reveal-js-style
+type: text/vnd.tiddlywiki
+
+.reveal .progress {
+	color: #eb6f92;
+}
+
+.reveal .controls .controls-arrow {
+	color: #3FA1EA;
+}
+
+.reveal .slide-number {
+	color: #3FA1EA;
+	background-color: transparent;
+}

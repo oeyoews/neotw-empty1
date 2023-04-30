@@ -1,0 +1,50 @@
+title: $:/plugins/oeyoews/neotw-confetti/readme
+
+<a style="text-decoration:none;" href="https://github.com/oeyoews/neotw" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-Neotw-green?style=flat" />
+</a>
+<$image source={{{ [[][https://img.shields.io/badge/Version-]] [<currentTiddler>get[version]] [[-red?style=flat&logo=dev.to&logoColor=red]] +[join[]]}}} />
+<a style="text-decoration:none;" href="https://github.com/catdad/canvas-confetti" target="_blank">
+  <img src="https://img.shields.io/badge/Powered by-confetti-green?style=flat" />
+</a>
+
+<div class="prose">
+
+!! Examples
+
+<div class="grid grid-rows-2 grid-cols-4 gap-4">
+<$confetti text="🔊 sound" type="centerSound"/>
+<$confetti text="❓ Who Know"/>
+<$confetti text="🔥 fireworks" type="fireworks"/>
+<$confetti text="🎉 pride" type="pride"/>
+<$confetti text="🌨️ snow" type="snow"/>
+<$confetti text="🎉 realistic" type="realistic"/>
+<$confetti text="🍾 msg" type="msg"/>
+<$confetti text="🎲 random" type="random"/>
+<$confetti text="🎲 center" type="center"/>
+</div>
+
+!! with action-sendmessage
+
+```wikitext
+<$button message="om-confetti-launch">
+🔊 Click Me
+</$button>
+
+or
+
+<$button>
+<$action-sendmessage $message="om-confetti-launch"/>
+🔊 Click Me
+</$button>
+```
+
+<$button message="om-confetti-launch">
+🔊 Click Me
+</$button>
+
+!! Usage
+
+> 👋 TODO
+
+</div>

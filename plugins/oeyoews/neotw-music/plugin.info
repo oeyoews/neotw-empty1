@@ -1,0 +1,15 @@
+{
+  "version": "0.4.1",
+  "type": "application/json",
+  "title": "$:/plugins/oeyoews/neotw-music",
+  "plugin-type": "plugin",
+  "name": "TWM",
+  "core-version": ">=5.2.5",
+  "description": "Tiddlywiki5 music player",
+  "author": "oeyoews",
+  "dependents": [
+    "$:/plugins/oeyoews/tiddlywiki-modal-ui",
+    "$:/plugins/kookma/shiraz-callout"
+  ],
+  "list": "readme explore"
+}
